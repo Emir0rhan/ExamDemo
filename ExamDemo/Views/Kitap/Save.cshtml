@@ -1,0 +1,23 @@
+﻿@model Kitap
+
+<form asp-action="Save" method="post" >
+    
+    <div style="width:%50">
+
+        <div>
+            <label asp-for="Id" class="form-label"></label>
+            <input asp-for="Id" class="form-control" />
+        </div>
+        <div>
+            <label asp-for="KitapAdi" class="form-label"></label>
+            <input asp-for="KitapAdi" class="form-control" />
+        </div>
+        <div>
+            <label asp-for="Yazar" class="form-label"></label>
+            <input asp-for="Yazar" class="form-control" />
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-info mt-2">save</button>
+
+</form>
